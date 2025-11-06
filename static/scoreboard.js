@@ -13,6 +13,7 @@ function addTeamView(id, name, score){
   var increase_button = $("<button class = increase-button>+</button>");
   $(increase_button).click(function(){
     increase_score(id);
+    location.reload(); //added this to reload/redisplay every time a score button is clicked
   });
   name_template.text(name);
   score_template.text(score);
